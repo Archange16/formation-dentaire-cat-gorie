@@ -16,10 +16,10 @@ const MainMenu = () => {
         <>
             <ul>
                 <li className="menu-item-has-children">
-                    <Link href="/" onClick={() => handleMenuClick('Accueil')}>Accueil</Link>
+                    <Link href="https://formations-dentaire.fr" onClick={() => handleMenuClick('Accueil')}>Accueil</Link>
                 </li>
                 <li className="menu-item-has-children">
-                    <Link href="/about" onClick={() => handleMenuClick('À propos')}>Solutions</Link>
+                    <Link href="https://formations-dentaire.fr/#Solutions" onClick={() => handleMenuClick('À propos')}>Solutions</Link>
                 </li>
                 <li className="menu-item-has-children">
                     <Link href="https://formations-dentaire.fr/#formation" onClick={() => handleMenuClick('Formations')}>Formation</Link>
@@ -28,7 +28,7 @@ const MainMenu = () => {
                     <Link href="/categories" onClick={() => handleMenuClick('Formations')}>Categories</Link>
                 </li>
                 <li className="menu-item-has-children">
-                    <Link href="/blog" onClick={() => handleMenuClick('Blog')}>Témoignage</Link>
+                    <Link href="https://formations-dentaire.fr/#Temoignage" onClick={() => handleMenuClick('Blog')}>Témoignage</Link>
                 </li>
             </ul>
         </>

@@ -18,17 +18,17 @@ const ResponsiveMenu = () => {
         <>
             <ul>
                 <li className='menu-item-has-children'>
-                    <Link href='/'>Accueil</Link>
+                    <Link href='https://formations-dentaire.fr'>Accueil</Link>
                 </li>  
                 <li className='menu-item-has-children'>
-                    <Link href='/about'>Solutions</Link>
+                    <Link href='https://formations-dentaire.fr/#Solutions'>Solutions</Link>
                 </li>
                 <li className="menu-item-has-children">
                     <Link href="https://formations-dentaire.fr/#formation" onClick={() => handleMenuClick('Formations')}>Formation</Link>
                 </li>
                 <li className='menu-item-has-children'><Link href='/categories'>Categories</Link>
                 </li>
-                <li className='menu-item-has-children'><Link href='/'>Témoignage</Link>
+                <li className='menu-item-has-children'><Link href='https://formations-dentaire.fr/#Temoignage'>Témoignage</Link>
                 </li>
             </ul>  
             <SideBarContact isOpen={sidebarOpen1} setIsOpen={setSidebarOpen1} />

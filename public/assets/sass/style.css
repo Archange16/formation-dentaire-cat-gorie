@@ -1167,9 +1167,9 @@ p {
   --btn-white: #FFFFFF;
   --border-white: #FFFFFF;
   --black: #000000;
-  --primary-color-1: #7222db;
+  --primary-color-1: #000d44;
   --primary-color-2: #FF6F3C  ;
-  --primary-color-3: #b124fb;
+  --primary-color-3: #53e5a7;
   --bg-heading-color: #130526ee;
   --text-heading-color: #1f0a3b;
   --btn-heading-color: #131313;
@@ -1178,11 +1178,11 @@ p {
   --dark-two: #222429;
   --color-1: #F4F7FB;
   --color-2: #737373;
-  --color-3: #7516f2;
+  --color-3: #0388d7;
   --color-4: #CCCCCC;
-  --color-5: #42246a;
-  --color-6: #864af942;
-  --color-7: #421281;
+  --color-5: #467db5;
+  --color-6: #013972;
+  --color-7: #0069d3;
   --border-color-1: #E7E7E7;
   --border-color-2: #E9E9E8;
   --border-color-3: rgba(19, 19, 19, 0.1);

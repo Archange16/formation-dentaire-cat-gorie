@@ -30,6 +30,9 @@ const MainMenu = () => {
                 <li className="menu-item-has-children">
                     <Link href="https://formations-dentaire.fr/#Temoignage" onClick={() => handleMenuClick('Blog')}>Témoignage</Link>
                 </li>
+                <li className="menu-item-has-children">
+                    <Link href="https://formations-dentaire.fr/#Contact" onClick={() => handleMenuClick('Blog')}>Contact</Link>
+                </li>
             </ul>
         </>
     );

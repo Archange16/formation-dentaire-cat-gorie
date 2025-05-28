@@ -30,6 +30,9 @@ const ResponsiveMenu = () => {
                 </li>
                 <li className='menu-item-has-children'><Link href='https://formations-dentaire.fr/#Temoignage'>Témoignage</Link>
                 </li>
+                <li className="menu-item-has-children">
+                    <Link href="https://formations-dentaire.fr/#Contact" onClick={() => handleMenuClick('Blog')}>Contact</Link>
+                </li>
             </ul>  
             <SideBarContact isOpen={sidebarOpen1} setIsOpen={setSidebarOpen1} />
         </>

@@ -111,13 +111,13 @@ body {
   padding: 0;
   overflow-x: hidden; /* Empêche les débordements horizontaux */
   text-transform: capitalize;
-  background:var(--color-5) url(../img/video/2560x1440-bgT1.webp) no-repeat center center fixed;
+  background:var(--color-6) /* url(../img/video/2560x1440-bgT1.webp) */ no-repeat center center fixed;
   background-size: 1000%; /* Taille initiale de l'image (100%) */
   position: relative;
 }
 #contentAccueil {
   position: relative;
-  background: url(../img/video/2560x1440-bgT1.webp) no-repeat center center fixed;
+  background: var(--color-6)/* url(../img/video/2560x1440-bgT1.webp) */ no-repeat center center fixed;
   z-index: 1; /* Place le contenu au-dessus de l'arrière-plan */
 }
 
@@ -523,6 +523,7 @@ p {
   overflow: hidden;
   border-radius: 50px;
   border: 1px solid var(--primary-color-1);
+
 }
 .btn-one i,
 .btn-two i,
@@ -551,7 +552,9 @@ p {
 .btn-eight:hover,
 .btn-nine:hover {
   background-color: var(--text-white);
-  color: var(--primary-color-3);
+  
+  box-shadow: 0px 6px 25px rgba(174, 211, 195, 0.9);
+  transform: translateY(-2px);
 }
 .btn-one:hover i,
 .btn-two:hover i,
@@ -567,8 +570,21 @@ p {
   color: var(--text-white);
 }
 
-.btn-one {
-  background: var(--primary-color-1);
+.btn-one {  
+  overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000d44;
+  background: linear-gradient(180deg, var(--primary-color-3) 37.5%, #DDFFF1 100%);
+  box-shadow: 0px 3px 15px rgba(174, 211, 195, 0.7);
+  font-size: 14px;
+  transition: all 0.3s ease;
+  font-weight: 700;
+  line-height: 1;
+  padding: 21px 30px;
 }
 .btn-two {
   background: var(--primary-color-2);
@@ -1169,8 +1185,8 @@ p {
   --black: #000000;
   --primary-color-1: #000d44;
   --primary-color-2: #FF6F3C  ;
-  --primary-color-3: #53e5a7;
-  --bg-heading-color: #130526ee;
+  --primary-color-3: #04ce78;
+  --bg-heading-color: #000d44;
   --text-heading-color: #1f0a3b;
   --btn-heading-color: #131313;
   --body-color: #343434;
@@ -3370,7 +3386,7 @@ p {
   padding: 0 30px;
   position: relative;
   z-index: 999;
-  background-color: #ffffff;
+  background-color: #000d44;
   /* =============== Header Two Style =============== */
   /* =============== Header Three Style =============== */
   /* =============== Header Four Style =============== */
@@ -3386,7 +3402,7 @@ p {
   display: inline-block;
 }
 .header__area-menubar-left-logo a img {
-  max-width: 165px;
+  max-width: 200px;
   position: relative;
   z-index: 9999;
 }
@@ -3400,21 +3416,31 @@ p {
   list-style: none;
 }
 .header__area-menubar-center-menu ul li:hover > a {
-  color: var(--primary-color-1);
+  color: var(--primary-color-3);
 }
 .header__area-menubar-center-menu ul li:hover > a i {
   transform: rotate(-180deg);
 }
 .header__area-menubar-center-menu ul li a {
-  color: var(--black);
-  display: block;
-  font-size: 19px;
+    display: block;
+    position: relative;
+    font-weight: 600;
+    font-size: 16px;
+     padding: 38px 10px;
+    font-family: var(--body-font);
+    color: var(--border-white);
+    text-transform: uppercase;
+    text-decoration: none; /* Optionnel mais souvent utile pour les liens */
+    transition: color 0.3s ease; /* Pour un effet au survol fluide */
+
+  
+  /* font-size: 19px;
   line-height: 24px;
   font-weight: 700;
   transition: all 0.4s ease-out 0s;
   text-transform: capitalize;
   padding: 38px 10px;
-  font-family: var(--heading-font);
+  font-family: var(--heading-font); */
 }
 .header__area-menubar-center-menu ul li:hover > .sub-menu {
   transform: scale(1, 1);
@@ -4147,7 +4173,6 @@ Responsive Menu Css
 ==========================================================================*/
 .banner__one {
   padding: 30px 0;
-  /*background-image: linear-gradient(75deg, #fefefe 52%, var(--color-1) 48%);*/
   position: relative;
   overflow: hidden;
 }
@@ -4643,7 +4668,8 @@ Responsive Menu Css
 * Page Banner CSS
 ==========================================================================*/
 .page__banner {
-  background-color: #00000057;
+  /* background-color: #00000057; */
+  background:var(--color-5) url(../img/video/imageFond.png) no-repeat center center;
   position: relative;
   overflow: hidden;
 }

@@ -58,56 +58,46 @@ const HeaderOne = ({variant}) => {
 
     return (
         <>
-        <div className="top__bar">
-            <div className="container">
-                <div className="row">
-                    <div className="col-xl-7 col-md-7">
-                    </div>
-                    <div className="col-xl-5 col-md-5">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div className={`header__area ${ variant ? variant : "" } header__sticky ${isSticky ? "header__sticky-sticky-menu" : ""}`}>
-            <div className="container">
-                <div className="header__area-menubar">
-                    <div className="header__area-menubar-left">
-                        <div className="header__area-menubar-left-logo">
-                            <Link href="https://formations-dentaire.fr"><img src={logo1.src} alt="logo" /></Link>
+            <div className={`header__area ${ variant ? variant : "" } header__sticky ${isSticky ? "header__sticky-sticky-menu" : ""}`}>
+                <div className="container1">
+                    <div className="header__area-menubar">
+                        <div className="header__area-menubar-left">
+                            <div className="header__area-menubar-left-logo">
+                                <Link href="https://formations-dentaire.fr"><img src={logo1.src} alt="logo" /></Link>
+                            </div>
                         </div>
-                    </div>
-                    <div className="header__area-menubar-center">
-                        <div className="header__area-menubar-center-menu">
-                            <MainMenu />
+                        <div className="header__area-menubar-center">
+                            <div className="header__area-menubar-center-menu">
+                                <MainMenu />
+                            </div>
                         </div>
-                    </div>
-                    <div className="header__area-menubar-right">
-                        <div className="header__area-menubar-right-box">
-                           {/*  <div className="header__area-menubar-right-box-sidebar">
-                                <div className="header__area-menubar-right-box-sidebar-popup-icon" onClick={() => setSidebarOpen(true)}>
-                                    <span className="bar-1"></span>
-                                    <span className="bar-2"></span>
-                                    <span className="bar-3"></span>
+                        <div className="header__area-menubar-right">
+                            <div className="header__area-menubar-right-box">
+                            {/*  <div className="header__area-menubar-right-box-sidebar">
+                                    <div className="header__area-menubar-right-box-sidebar-popup-icon" onClick={() => setSidebarOpen(true)}>
+                                        <span className="bar-1"></span>
+                                        <span className="bar-2"></span>
+                                        <span className="bar-3"></span>
+                                    </div>
+                                </div> */}
+                                <div className="header__area-menubar-right-box-btn">
+                                    <button className="btn-one" ><Link href='https://formations-dentaire.fr/product/formation-qualite-cabinet-dentaire/'>Je m'inscris maintenant !</Link><i className="fas fa-arrow-right"></i></button>
                                 </div>
-                            </div> */}
-                            <div className="header__area-menubar-right-box-btn">
-                                <button className="btn-one" ><Link href='https://formations-dentaire.fr/product/formation-qualite-cabinet-dentaire/'>Je m'inscris maintenant !</Link><i className="fas fa-arrow-right"></i></button>
-                            </div>
-                            <div className="header__area-menubar-right-box-btn1">
-                                <i className=""  target="_blank"  onClick={handleContactClick}><img src={formulaire.src} alt="logo"/></i>
-                            </div>
-                            <div className="header__area-menubar-right-responsive-menu menu__bar">
-                                <i className="flaticon-menu-1" onClick={() => setMenuSidebar(true)}></i>
+                                <div className="header__area-menubar-right-box-btn1">
+                                    <i className=""  target="_blank"  onClick={handleContactClick}><img src={formulaire.src} alt="logo"/></i>
+                                </div>
+                                <div className="header__area-menubar-right-responsive-menu menu__bar">
+                                    <i className="flaticon-menu-1" onClick={() => setMenuSidebar(true)}></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <SideBar isOpen={sidebarOpen} setIsOpen={setSidebarOpen} />
-        <SideBarContact isOpen={sidebarOpen1} setIsOpen={setSidebarOpen1} />
-        <MobileMenuPopup isOpen={menuSidebar} setIsOpen={setMenuSidebar} popupLogo={logo2} />
-        <Search isOpen={search} setIsOpen={setSearch} />
+            <SideBar isOpen={sidebarOpen} setIsOpen={setSidebarOpen} />
+            <SideBarContact isOpen={sidebarOpen1} setIsOpen={setSidebarOpen1} />
+            <MobileMenuPopup isOpen={menuSidebar} setIsOpen={setMenuSidebar} popupLogo={logo2} />
+            <Search isOpen={search} setIsOpen={setSearch} />
         </>
     );
 };

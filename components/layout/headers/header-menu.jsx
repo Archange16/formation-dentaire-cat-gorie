@@ -22,7 +22,10 @@ const MainMenu = () => {
                     <Link href="/about" onClick={() => handleMenuClick('À propos')}>Solutions</Link>
                 </li>
                 <li className="menu-item-has-children">
-                    <Link href="/categories" onClick={() => handleMenuClick('Formations')}>Formation</Link>
+                    <Link href="https://formations-dentaire.fr/#formation" onClick={() => handleMenuClick('Formations')}>Formation</Link>
+                </li>
+                <li className="menu-item-has-children">
+                    <Link href="/categories" onClick={() => handleMenuClick('Formations')}>Categories</Link>
                 </li>
                 <li className="menu-item-has-children">
                     <Link href="/blog" onClick={() => handleMenuClick('Blog')}>Témoignage</Link>

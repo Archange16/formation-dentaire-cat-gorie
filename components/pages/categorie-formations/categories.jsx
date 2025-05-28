@@ -41,23 +41,42 @@ const CategoriesMain = () => {
                                 </Link>
                             </div>
                         </div>
-                        <div className="col-xl-12 col-lg-4 col-md-6">
-                            <div className="services__two-single-service">
-                                <div className="services__two-single-service-icon">
-                                    {/* Vous pouvez ajouter une icône ou un contenu ici */}
-                                </div>
-                                <div className="services__two-single-service-image">
-                                    <img className="img__full" src={image1?.src} alt="Création d'entreprise" />
-                                </div>
-                                <div className="services__two-single-service-content formation-solution">
-                                    <h4>ENTREPRENEURS</h4> 
-                                    <Link href={`/categories/Entrepreneur`} className="btn-one mb-20 ml-20">
-                                        Voir les formations
-                                    </Link>
+                        <div className="row mt-3">
+                            <div className="col-xl-6 col-lg-4 col-md-6">
+                                <div className="services__two-single-service">
+                                    <div className="services__two-single-service-icon">
+                                        {/* Vous pouvez ajouter une icône ou un contenu ici */}
+                                    </div>
+                                    <div className="services__two-single-service-image">
+                                        <img className="img__full" src={image1?.src} alt="Création d'entreprise" />
+                                    </div>
+                                    <div className="services__two-single-service-content formation-solution">
+                                        <h4>FORMATION DENTAIRE</h4> 
+                                        <Link href={`/categories/Entrepreneur`} className="btn-one mb-20 ml-20">
+                                            Voir les formations
+                                        </Link>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                             <div className="col-xl-6 col-lg-4 col-md-6">
+                                <div className="services__two-single-service">
+                                    <div className="services__two-single-service-icon">
+                                        {/* Vous pouvez ajouter une icône ou un contenu ici */}
+                                    </div>
+                                    <div className="services__two-single-service-image">
+                                        <img className="img__full" src={image1?.src} alt="Création d'entreprise" />
+                                    </div>
+                                    <div className="services__two-single-service-content formation-solution">
+                                        <h4>ENTREPRENEURS</h4> 
+                                        <Link href={`/categories/Entrepreneur`} className="btn-one mb-20 ml-20">
+                                            Voir les formations
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
 
+                        </div>
+                        
                         {/* Itérer sur les catégories */}
                         {Object.keys(groupedServices).length > 0 ? (
                             Object.keys(groupedServices).map((category, index) => {

@@ -5984,7 +5984,7 @@ Responsive Menu Css
 * Services Two Style
 ==========================================================================*/
 .services__two {
-  background: var(--color-1);
+  background: #e7e7e7/* var(--color-1) */;
 }
 .services__two-title {
   margin-bottom: 58px;
